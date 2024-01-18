@@ -1,0 +1,52 @@
+.footer{
+    background-color: $grisOscuro;
+    padding: $separacion / 2  0;
+    
+    .navegacion-principal{
+      justify-content: end;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      gap: 2rem;
+      visibility: visible;
+      opacity: 1;
+
+      @include tablet {
+        margin: -10rem 10rem 10rem 0; //Arriba derecha abajo izquierda
+        flex-direction: row;
+        
+      }
+    }
+
+    .contenido-footer{ 
+        padding-top: $separacion / 2;
+        display: flex;
+        justify-content: center;
+
+        @include tablet{
+          justify-content: space-between;
+      
+        }
+
+      img{
+        height: 20rem;
+        width: 20rem;
+        background-color: $verde;
+        border-radius: 50%;
+        
+        
+      }
+
+    }
+
+    .copyright{
+        text-align: center;
+        color: $blanco;
+    }
+    
+    
+
+      
+    }
+
+   
